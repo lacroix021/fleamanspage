@@ -6,13 +6,13 @@ export default function NavBar() {
     <>
         <ul>
             <li>
-                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/">Home</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/fleamans-page/">Home</NavLink>
             </li>
             <li>
-                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/terms">Terms</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/fleamans-page/terms">Terms</NavLink>
             </li>
             <li>
-                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/about">About</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active" : null)} to="/fleamans-page/about">About</NavLink>
             </li>
         </ul>
     </>
