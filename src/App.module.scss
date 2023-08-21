@@ -1,0 +1,23 @@
+@import './vars.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: unset;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

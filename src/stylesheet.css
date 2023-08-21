@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Old London';
+    src: url('./fonts/OldLondon.woff2') format('woff2'),
+        url('./fonts/OldLondon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Deutsche Zierschrift';
+    src: url('./fonts/DeutscheZierschrift.woff2') format('woff2'),
+        url('./fonts/DeutscheZierschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morris Roman Alternate';
+    src: url('./fonts/MorrisRomanAlternate-Black.woff2') format('woff2'),
+        url('./fonts/MorrisRomanAlternate-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morris Roman';
+    src: url('./fonts/MorrisRoman-Black.woff2') format('woff2'),
+        url('./fonts/MorrisRoman-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+

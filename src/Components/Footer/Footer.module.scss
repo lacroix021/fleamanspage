@@ -1,0 +1,83 @@
+@import '../../vars.scss';
+
+footer {
+    background-color: $cblack;
+    color: $cwhite;
+
+    .containerFooter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0 15px;
+
+        @media screen and (max-width: 767px){
+            padding: 30px 20px 15px;
+        }
+
+        .mainLogo {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            text-align: center;
+            
+            span {
+                font-size: 19px;
+                font-family: $f3;
+                letter-spacing: 1px;
+
+                @media screen and (max-width: 767px){
+                    font-size: 15px;
+                }
+            }
+
+            .socialMedia {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin: 30px 0;
+
+                li {
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: $c2;
+                        transition: 0.3s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+
+                            svg {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            font-size: 13px;
+
+            @media screen and (max-width: 767px){
+                font-size: 10px;
+            }
+        }
+    }
+}
