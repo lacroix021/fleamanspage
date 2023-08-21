@@ -12,10 +12,10 @@ export default function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/terms' element={<Terms />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='*' element={<NotFound />}/>
+        <Route path='/fleamans-page/' element={<Home />}/>
+        <Route path='/fleamans-page/terms' element={<Terms />}/>
+        <Route path='/fleamans-page/about' element={<About />}/>
+        <Route path='/fleamans-page/*' element={<NotFound />}/>
       </Routes>
       <div>aqui iria el footer</div>
     </BrowserRouter>
