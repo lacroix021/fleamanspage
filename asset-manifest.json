@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/fleamans-page/static/css/main.e6c13ad2.css",
-    "main.js": "/fleamans-page/static/js/main.1f5a24e6.js",
+    "main.css": "/fleamans-page/static/css/main.b2319cdb.css",
+    "main.js": "/fleamans-page/static/js/main.9d1d10da.js",
     "static/js/787.9cac32c1.chunk.js": "/fleamans-page/static/js/787.9cac32c1.chunk.js",
+    "static/media/DeutscheZierschrift.woff": "/fleamans-page/static/media/DeutscheZierschrift.a9f814ebeb9b89fcc739.woff",
+    "static/media/DeutscheZierschrift.woff2": "/fleamans-page/static/media/DeutscheZierschrift.e89be9244121d5337d81.woff2",
+    "static/media/TitleBG.png": "/fleamans-page/static/media/TitleBG.442a1898e70f63abe9cb.png",
+    "static/media/fleaman-Title.png": "/fleamans-page/static/media/fleaman-Title.6a50a331b52be99df63e.png",
+    "static/media/MorrisRoman-Black.woff": "/fleamans-page/static/media/MorrisRoman-Black.2d4789f0f1ee19ae3654.woff",
+    "static/media/MorrisRomanAlternate-Black.woff": "/fleamans-page/static/media/MorrisRomanAlternate-Black.7496147b3e6bc6479a5b.woff",
+    "static/media/OldLondon.woff": "/fleamans-page/static/media/OldLondon.1624e7f7925f0949163d.woff",
+    "static/media/OldLondon.woff2": "/fleamans-page/static/media/OldLondon.ca2aba57647b572a8748.woff2",
+    "static/media/MorrisRoman-Black.woff2": "/fleamans-page/static/media/MorrisRoman-Black.19d98b79bd7cc66c2e6c.woff2",
+    "static/media/MorrisRomanAlternate-Black.woff2": "/fleamans-page/static/media/MorrisRomanAlternate-Black.10d96327864ed69fe647.woff2",
+    "static/media/FH-transparent.png": "/fleamans-page/static/media/FH-transparent.e3743960b181ae119e79.png",
     "index.html": "/fleamans-page/index.html",
-    "main.e6c13ad2.css.map": "/fleamans-page/static/css/main.e6c13ad2.css.map",
-    "main.1f5a24e6.js.map": "/fleamans-page/static/js/main.1f5a24e6.js.map",
+    "main.b2319cdb.css.map": "/fleamans-page/static/css/main.b2319cdb.css.map",
+    "main.9d1d10da.js.map": "/fleamans-page/static/js/main.9d1d10da.js.map",
     "787.9cac32c1.chunk.js.map": "/fleamans-page/static/js/787.9cac32c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.1f5a24e6.js"
+    "static/css/main.b2319cdb.css",
+    "static/js/main.9d1d10da.js"
   ]
 }
