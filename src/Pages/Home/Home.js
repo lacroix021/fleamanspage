@@ -21,21 +21,25 @@ export default function Home() {
   const images = [img1, img2, img3, img4, img5, img6, img7];
   const info = `These screenshots were taken in-game while it was being developed.`;
   const smallInfo = `(may change in the final version).`;
+  const title = "In Game Images";
 
   return (
     <>
       <main className={styles.MainContent}>
-        <div className={styles.content} style={ body }>
-          <div className={styles.carouselContainer}>
-            <Carousel array={ images }/>
-          </div>
-          <div className={styles.containerInfo}>
-            <span className={styles.info}>
-              { info }
-              <small>
-                { smallInfo }
-              </small>
-            </span>
+        <div className={styles.block} style={ body }>
+          <h1>{ title }</h1>
+          <div className={styles.content}>
+            <div className={styles.carouselContainer}>
+              <Carousel array={ images }/>
+            </div>
+            <div className={styles.containerInfo}>
+              <span className={styles.info}>
+                { info }
+                <small>
+                  { smallInfo }
+                </small>
+              </span>
+            </div>
           </div>
         </div>
       </main>
