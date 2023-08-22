@@ -1,0 +1,37 @@
+@import '../../vars.scss';
+
+.MainContent {
+    background-color: $c1hover;
+
+    .content {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .carouselContainer {
+        position: relative;
+        width: 70%;
+        padding: 0 30px;
+    }
+
+    .containerInfo {
+        width: 30%;
+        padding: 0 30px;
+
+        .info {
+            font-size: 24px;
+            font-family: $f3;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: $cwhite;
+            text-shadow: $cblack 5px 3px 4px;
+
+            small {
+                font-size: 16px;
+            }
+        }
+    }
+}

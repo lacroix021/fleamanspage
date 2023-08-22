@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React , { useState } from 'react';
+import GeneraContextProvider from './context/GeneralContext';
 
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import Terms from './Pages/Terms';
 import HowToPlay from './Pages/HowToPlay';
 import NotFound from './Pages/NotFound';
@@ -12,29 +13,28 @@ import './App.module.scss';
 import './stylesheet.css';
 import { BallTriangle } from  'react-loader-spinner';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { AiOutlineAndroid, AiOutlineFileDone, AiFillHome } from "react-icons/ai";
 
 export default function App() {
-  const maxWidth = 1200;
   const [showLoader, setShowLoader] = useState(false);
 
   const menuLinks = [
     {
       name: "Home",
       slug: "",
-      element: <Home />,
       icon: <AiFillHome />
     },
     {
       name: "Terms and Conditions",
       slug: "terms",
-      element: <Terms />,
       icon: <AiOutlineFileDone />
     },
     {
       name: "How to Play",
       slug: "how-to-play",
-      element: <HowToPlay />,
       icon: <AiOutlineAndroid />
     },
   ];
@@ -62,17 +62,17 @@ export default function App() {
         visible = { showLoader }
       />
 
-      <NavBar max_Width={ maxWidth } arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
 
-      <Routes>
-        {menuLinks.map(({slug, element}, index) =>{
-          return(
-            <Route key={index} path={`/fleamans-page/${slug}`} element={element}/>
-          )
-        })}
-        <Route path='/fleamans-page/*' element={<NotFound />}/>
-      </Routes>
-      <Footer />
+      <GeneraContextProvider>
+        <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
+        <Routes>
+          <Route path='/fleamans-page/' element={<Home/>}/>
+          <Route path='/fleamans-page/terms' element={<Terms/>}/>
+          <Route path='/fleamans-page/how-to-play' element={<HowToPlay/>}/>
+          <Route path='/fleamans-page/*' element={<NotFound />}/>
+        </Routes>
+        <Footer />
+      </GeneraContextProvider>
     </BrowserRouter>
   );
 }

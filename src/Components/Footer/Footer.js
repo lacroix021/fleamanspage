@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Footer.module.scss';
+import { generalContext } from '../../context/GeneralContext';
 
 import MainLogo from '../../assets/FH-transparent.png';
 import { AiFillFacebook, AiFillYoutube } from "react-icons/ai";
 import { FaPatreon, FaPaypal } from "react-icons/fa";
 
 export default function Footer() {
-
+  const max_width = useContext(generalContext);
+  const body = {maxWidth: max_width};
   const info = `Remember that you can support this project by following me on my social networks, 
     or if you want to make a donation, I will leave you my paypal or patreon where I will be uploading 
     content in advance and listening to the ideas that my followers share with me.`;
@@ -14,7 +16,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className={styles.containerFooter}>
+        <div className={styles.containerFooter} style={ body }>
           <div className={styles.mainLogo}>
             <img src={ MainLogo } alt="fleemans-logo" />
           </div>

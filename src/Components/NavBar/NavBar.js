@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from './NavBar.module.scss';
+import { generalContext } from '../../context/GeneralContext';
 import { NavLink } from 'react-router-dom';
 import FleamansTitle from '../../assets/fleaman-Title.png';
 import { AiOutlineMenuUnfold, AiOutlineMenuFold } from "react-icons/ai";
 
-export default function NavBar({ max_Width, arrayLinks, setShowLoader }) {
-    const body = {maxWidth: max_Width + 'px'};
+export default function NavBar({ arrayLinks, setShowLoader }) {
+    const max_width = useContext(generalContext);
+    const body = {maxWidth: max_width};
     const [showMenu, setShowMenu] = useState('');
     const [hardReset, setHardReset] = useState(false);
 
@@ -16,7 +18,7 @@ export default function NavBar({ max_Width, arrayLinks, setShowLoader }) {
         else{
             setShowMenu('');
         }
-        
+
         setHardReset(!hardReset);
     };
 

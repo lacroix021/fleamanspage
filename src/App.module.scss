@@ -21,3 +21,23 @@ img {
     object-fit: cover;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $c4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $c5;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $c6;
+}
