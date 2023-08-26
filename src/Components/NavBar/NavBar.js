@@ -29,7 +29,7 @@ export default function NavBar({ arrayLinks, setShowLoader }) {
         setTimeout(() => {
             document.body.classList.remove('modal-open');
             setShowLoader(false);
-        }, 5000);
+        }, 1000);
 
         setShowMenu('');
     }
