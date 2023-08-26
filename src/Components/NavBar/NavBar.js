@@ -24,10 +24,12 @@ export default function NavBar({ arrayLinks, setShowLoader }) {
 
     const ShowLoader = ()=> {
         setShowLoader(true);
+        document.body.classList.add('modal-open');
 
         setTimeout(() => {
+            document.body.classList.remove('modal-open');
             setShowLoader(false);
-        }, 1000);
+        }, 5000);
 
         setShowMenu('');
     }

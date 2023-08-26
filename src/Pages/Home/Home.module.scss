@@ -8,6 +8,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 0;
+
+        @media screen and (max-width: 767px){
+            padding: 0;
+        }
 
         h1 {
             font-family: $f3;
@@ -34,6 +39,7 @@
     
             @media screen and (max-width: 767px){
                 padding: 0 15px;
+                gap: 20px;
             }
 
 
@@ -72,5 +78,66 @@
                 }
             }
         }
+    }
+
+    .videoContainer {
+        width: 100%;
+        background-color: $c3hover;
+
+        .container {
+            margin: 0 auto;
+            padding: 50px 0;
+            display: flex;
+            gap: 30px;
+
+            @media screen and (max-width: 1200px){
+                padding: 30px;
+            }
+    
+            @media screen and (max-width: 767px){
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
+
+            .asideInfo {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                font-family: $f3;
+                font-size: 24px;
+                color: $cwhite;
+                text-shadow: $cblack 5px 3px 4px;
+                text-align: center;
+    
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                }
+            }
+    
+            .asideVideo {
+                flex: 1;
+                height: 400px;
+    
+                @media screen and (max-width: 1200px){
+                    height: 243px;
+                }
+    
+                @media screen and (max-width: 767px){
+                    height: 210px;
+                    width: 100%;
+                    flex: unset;
+                }
+    
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+
     }
 }

@@ -22,12 +22,14 @@ export default function Home() {
   const info = `These screenshots were taken in-game while it was being developed.`;
   const smallInfo = `(may change in the final version).`;
   const title = "In Game Images";
+  const VideoInfo =`Gameplay captured in development, there may be changes in the final version`;
 
   return (
     <>
       <main className={styles.MainContent}>
         <div className={styles.block} style={ body }>
           <h1>{ title }</h1>
+          
           <div className={styles.content}>
             <div className={styles.carouselContainer}>
               <Carousel array={ images }/>
@@ -42,6 +44,17 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <section className={styles.videoContainer} >
+          <div className={styles.container} style={ body }>
+            <div className={styles.asideInfo}>
+              { VideoInfo }
+            </div>
+            <div className={styles.asideVideo}>
+              <iframe src="https://www.youtube.com/embed/tpNtoyI3hs4?si=Zv2ioTJ1dBf-sHlz" title="YouTube video player"></iframe>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )

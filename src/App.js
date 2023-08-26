@@ -3,7 +3,7 @@ import React , { useState } from 'react';
 import GeneraContextProvider from './context/GeneralContext';
 
 import Home from './Pages/Home/Home';
-import Terms from './Pages/Terms';
+import Privacy from './Pages/Privacy/Privacy';
 import HowToPlay from './Pages/HowToPlay';
 import NotFound from './Pages/NotFound';
 
@@ -16,7 +16,7 @@ import { BallTriangle } from  'react-loader-spinner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { AiOutlineAndroid, AiOutlineFileDone, AiFillHome } from "react-icons/ai";
+import {  AiOutlineFileDone, AiFillHome } from "react-icons/ai";
 
 export default function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -28,15 +28,15 @@ export default function App() {
       icon: <AiFillHome />
     },
     {
-      name: "Terms and Conditions",
-      slug: "terms",
+      name: "Privacy Policy",
+      slug: "privacy",
       icon: <AiOutlineFileDone />
     },
-    {
+    /* {
       name: "How to Play",
       slug: "how-to-play",
       icon: <AiOutlineAndroid />
-    },
+    }, */
   ];
 
   const styleLoader = {
@@ -67,7 +67,7 @@ export default function App() {
         <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
         <Routes>
           <Route path='/fleamans-page/' element={<Home/>}/>
-          <Route path='/fleamans-page/terms' element={<Terms/>}/>
+          <Route path='/fleamans-page/privacy' element={<Privacy/>}/>
           <Route path='/fleamans-page/how-to-play' element={<HowToPlay/>}/>
           <Route path='/fleamans-page/*' element={<NotFound />}/>
         </Routes>

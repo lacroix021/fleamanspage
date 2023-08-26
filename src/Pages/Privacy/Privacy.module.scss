@@ -1,0 +1,11 @@
+@import '../../vars.scss';
+
+.Privacy {
+    width: 100%;
+    background-color: $c2hover;    
+
+    .container {
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+}
