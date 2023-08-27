@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/fleamans-page/static/css/main.7a8043ef.css",
-    "main.js": "/fleamans-page/static/js/main.5fb849c1.js",
+    "main.css": "/fleamans-page/static/css/main.593594e5.css",
+    "main.js": "/fleamans-page/static/js/main.701155a7.js",
     "static/js/787.9cac32c1.chunk.js": "/fleamans-page/static/js/787.9cac32c1.chunk.js",
     "static/media/5.png": "/fleamans-page/static/media/5.e2c64d6174cfa6e3b853.png",
     "static/media/6.png": "/fleamans-page/static/media/6.08964c665260f448c136.png",
     "static/media/2.png": "/fleamans-page/static/media/2.8864d531e2b58fc6cf41.png",
     "static/media/4.png": "/fleamans-page/static/media/4.68e0710ebbc811aed893.png",
+    "static/media/Controlls.png": "/fleamans-page/static/media/Controlls.c39e69d004509f61d14c.png",
     "static/media/3.png": "/fleamans-page/static/media/3.ba8c797a70551f0e36b2.png",
     "static/media/DeutscheZierschrift.woff": "/fleamans-page/static/media/DeutscheZierschrift.a9f814ebeb9b89fcc739.woff",
     "static/media/1.png": "/fleamans-page/static/media/1.ce9ddd022d49eca4aa7f.png",
@@ -26,12 +27,12 @@
     "static/media/slick.ttf": "/fleamans-page/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/fleamans-page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/fleamans-page/index.html",
-    "main.7a8043ef.css.map": "/fleamans-page/static/css/main.7a8043ef.css.map",
-    "main.5fb849c1.js.map": "/fleamans-page/static/js/main.5fb849c1.js.map",
+    "main.593594e5.css.map": "/fleamans-page/static/css/main.593594e5.css.map",
+    "main.701155a7.js.map": "/fleamans-page/static/js/main.701155a7.js.map",
     "787.9cac32c1.chunk.js.map": "/fleamans-page/static/js/787.9cac32c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a8043ef.css",
-    "static/js/main.5fb849c1.js"
+    "static/css/main.593594e5.css",
+    "static/js/main.701155a7.js"
   ]
 }
