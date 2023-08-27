@@ -2,4 +2,8 @@
 
 .Carousel {
     max-width: 800px;
+
+    .interactable {
+        cursor: pointer;
+    }
 }

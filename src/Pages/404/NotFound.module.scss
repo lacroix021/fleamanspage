@@ -1,0 +1,48 @@
+@import '../../vars.scss';
+
+.NotFound {
+    width: 100%;
+    background-color: $c3hover;
+
+    .container {
+        margin: 0 auto;
+        padding: 50px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 1200px){
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 767px){
+            padding: 15px;
+        }
+
+        h1 {
+            font-family: $f3;
+            color: $cwhite;
+            text-shadow: $cblack 5px 3px 4px;
+        }
+
+        .video {
+            width: 80%;
+            height: 545px;
+
+            @media screen and (max-width: 1200px){
+                height: 430px;
+                width: 100%;
+            }
+    
+            @media screen and (max-width: 767px){
+                height: 210px;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

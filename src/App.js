@@ -1,11 +1,11 @@
-import { Routes, Route, BrowserRouter  } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import React , { useState } from 'react';
 import GeneralContextProvider from './context/GeneralContext';
 
 import Home from './Pages/Home/Home';
 import Privacy from './Pages/Privacy/Privacy';
 import HowToPlay from './Pages/HowToPlay/HowToPlay';
-import NotFound from './Pages/NotFound';
+import NotFound from './Pages/404/NotFound';
 
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
@@ -51,7 +51,7 @@ export default function App() {
   
 
   return (
-    <BrowserRouter >
+    <HashRouter>
       <BallTriangle
         height={100}
         width={100}
@@ -72,6 +72,6 @@ export default function App() {
         </Routes>
         <Footer />
       </GeneralContextProvider>
-    </BrowserRouter >
+    </HashRouter>
   );
 }

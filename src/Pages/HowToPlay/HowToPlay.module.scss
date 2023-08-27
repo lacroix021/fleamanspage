@@ -1,2 +1,128 @@
 @import "../../vars.scss";
 
+.HowToPlay {
+    width: 100%;
+
+    .container {
+        width: 100%;
+        background-color: $c1hover;
+
+        &.alter {
+            background-color: $c2hover;
+
+            .content {
+                .headInfo {
+                    h2 {
+                        color: $c3; 
+                    }
+                }
+            }
+        }
+
+        .content {
+            margin: 0 auto;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            @media screen and (max-width: 1200px){
+                padding: 30px;
+            }
+
+            @media screen and (max-width: 767px){
+                padding: 15px;
+            }
+
+            .headInfo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: $f3;
+
+                h2 {
+                    color: $c2;
+                    text-shadow: $cblack 5px 3px 4px;
+                    letter-spacing: 1px;
+                }
+
+                .infoDesktop {
+                    font-size: 22px;
+                    color: $cwhite;
+                    text-shadow: $cblack 5px 3px 4px;
+                    text-align: center;
+
+                    @media screen and (max-width: 1200px){
+                        display: none;
+                    }
+                }
+
+                .infoMobile {
+                    font-size: 22px;
+                    color: $cwhite;
+                    text-shadow: $cblack 5px 3px 4px;
+                    text-align: center;
+
+                    @media screen and (min-width: 1201px){
+                        display: none;
+                    }
+                }
+            }
+
+            .imageContainer {
+                width: 100%;
+            }
+
+            .carouselContainer {
+                width: 60%;
+
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                }
+            }
+
+            .carouselEnemies {
+                width: 30%;
+
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                }
+            }
+
+            .description {
+                font-family: $f3;
+                text-align: center;
+
+                h4 {
+                    color: $c3;
+                    text-shadow: $cblack 5px 3px 4px;
+                    letter-spacing: 1px;
+                    min-height: 50px;
+                }
+
+                span {
+                    font-size: 22px;
+                    color: $cwhite;
+                    text-shadow: $cblack 5px 3px 4px;
+                    min-height: 24px;
+                    display: block;
+                }
+            }
+
+            .hidden {
+                font-family: $f3;
+                text-align: center;
+                font-size: 20px;
+                color: $c2hover;
+                border-radius: 33px;
+
+                h2::selection,
+                p::selection {
+                    background-color: $cblood;
+                }
+            }
+        }
+    }
+}

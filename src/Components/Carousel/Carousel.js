@@ -3,7 +3,7 @@ import styles from './Carousel.module.scss';
 import Slider from "react-slick";
 
 
-export default function Carousel({ array }) {
+export default function Carousel({ nameSlider, array, extraSettings, clickeable = false, clickMethod = undefined }) {
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -27,24 +27,31 @@ export default function Carousel({ array }) {
     }
 
     var settings = {
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
 
+    for(const property in extraSettings){
+      settings[property] = extraSettings[property];
+    }
+
+
     return (
         <section className={styles.Carousel}>
             <Slider {...settings}>
-            { array.map((img, index)=>{
+            { array.map(({image, name, description}, index)=>{
                 return (
-                <div key={ index }>
-                    <img src={img} alt={"screenshot-"+index} />
-                </div>
+                  <div key={ index }>
+                    { clickeable ?
+                      <div className={styles.interactable} onClick={ (event)=>clickMethod(name, description, event) }>
+                        <img src={image} alt={`${nameSlider}-`+index} />
+                      </div>
+                    :
+                      <div>
+                          <img src={image} alt={`${nameSlider}-`+index} />
+                      </div>
+                    }
+                  </div>
                 )
             })}
             </Slider>

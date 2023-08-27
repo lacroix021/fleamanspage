@@ -16,13 +16,58 @@ import Carousel from '../../Components/Carousel/Carousel';
 export default function Home() {
   const max_width = useContext(generalContext);
   const body = {maxWidth: max_width};
-  
 
-  const images = [img1, img2, img3, img4, img5, img6, img7];
+  const imagesArray = [
+    {
+      image: img1,
+      name: "",
+      description: ""
+    },
+    {
+      image: img2,
+      name: "",
+      description: ""
+    },
+    {
+      image: img3,
+      name: "",
+      description: ""
+    },
+    {
+      image: img4,
+      name: "",
+      description: ""
+    },
+    {
+      image: img5,
+      name: "",
+      description: ""
+    },
+    {
+      image: img6,
+      name: "",
+      description: ""
+    },
+    {
+      image: img7,
+      name: "",
+      description: ""
+    },
+  ];
+
   const info = `These screenshots were taken in-game while it was being developed.`;
   const smallInfo = `(may change in the final version).`;
   const title = "In Game Images";
   const VideoInfo =`Gameplay captured in development, there may be changes in the final version`;
+
+  const carouselSettings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <>
@@ -32,7 +77,7 @@ export default function Home() {
           
           <div className={styles.content}>
             <div className={styles.carouselContainer}>
-              <Carousel array={ images }/>
+              <Carousel nameSlider="screenshots" array={ imagesArray } extraSettings={ carouselSettings }/>
             </div>
             <div className={styles.containerInfo}>
               <span className={styles.info}>

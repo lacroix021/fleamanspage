@@ -1,0 +1,67 @@
+@import '../../vars.scss';
+
+.ImageMap {
+    position: relative;
+
+    .point {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: $c2hover;
+        border-radius: 50%;
+        color: $cwhite;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &.pointHidden {
+            background-color: transparent;
+            color: transparent;
+
+            &.active {
+                background-color: $cblood;
+                color: $cwhite;
+            }
+        }
+
+        @media screen and (max-width: 767px){
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &.active {
+            background-color: $c3hover;
+        }
+    }
+
+    .message {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        width: 50%;
+        background-color: $coverlay;
+        text-align: center;
+        font-size: 20px;
+        font-family: $f3;
+        color: $cwhite;
+        border-radius: 33px;
+        padding: 15px;
+        text-shadow: $cblack 5px 3px 4px;
+        letter-spacing: 1px;
+
+        @media screen and (max-width: 767px){
+            font-size: 16px;
+            top: 5%;
+        }
+    }
+}
