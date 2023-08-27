@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter  } from 'react-router-dom';
 import React , { useState } from 'react';
 import GeneralContextProvider from './context/GeneralContext';
 
@@ -51,7 +51,7 @@ export default function App() {
   
 
   return (
-    <HashRouter>
+    <BrowserRouter >
       <BallTriangle
         height={100}
         width={100}
@@ -72,6 +72,6 @@ export default function App() {
         </Routes>
         <Footer />
       </GeneralContextProvider>
-    </HashRouter>
+    </BrowserRouter >
   );
 }
