@@ -57,7 +57,7 @@ export default function NavBar({ arrayLinks, setShowLoader }) {
                                     
                                     <NavLink 
                                         className={({ isActive }) => (isActive ? "active" : null)} 
-                                        to={`/fleamans-page/${slug}`} 
+                                        to={`${slug}`} 
                                         onClick={ ShowLoader } 
                                     >
                                         <div className={styles.iconLink}>

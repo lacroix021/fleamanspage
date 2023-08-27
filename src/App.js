@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import React , { useState } from 'react';
 import GeneraContextProvider from './context/GeneralContext';
 
@@ -51,7 +51,7 @@ export default function App() {
   
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <BallTriangle
         height={100}
         width={100}
@@ -66,13 +66,13 @@ export default function App() {
       <GeneraContextProvider>
         <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
         <Routes>
-          <Route path='/fleamans-page/' element={<Home/>}/>
-          <Route path='/fleamans-page/privacy' element={<Privacy/>}/>
-          <Route path='/fleamans-page/how-to-play' element={<HowToPlay/>}/>
-          <Route path='/fleamans-page/*' element={<NotFound />}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/privacy' element={<Privacy/>}/>
+          <Route path='/how-to-play' element={<HowToPlay/>}/>
+          <Route path='/*' element={<NotFound />}/>
         </Routes>
         <Footer />
       </GeneraContextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
