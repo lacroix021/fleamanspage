@@ -1,10 +1,10 @@
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import React , { useState } from 'react';
-import GeneraContextProvider from './context/GeneralContext';
+import GeneralContextProvider from './context/GeneralContext';
 
 import Home from './Pages/Home/Home';
 import Privacy from './Pages/Privacy/Privacy';
-import HowToPlay from './Pages/HowToPlay';
+import HowToPlay from './Pages/HowToPlay/HowToPlay';
 import NotFound from './Pages/NotFound';
 
 import NavBar from './Components/NavBar/NavBar';
@@ -16,7 +16,7 @@ import { BallTriangle } from  'react-loader-spinner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import {  AiOutlineFileDone, AiFillHome } from "react-icons/ai";
+import { AiOutlineFileDone, AiFillHome, AiOutlineAndroid } from "react-icons/ai";
 
 export default function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -24,19 +24,19 @@ export default function App() {
   const menuLinks = [
     {
       name: "Home",
-      slug: "",
+      slug: "/",
       icon: <AiFillHome />
     },
     {
       name: "Privacy Policy",
-      slug: "privacy",
+      slug: "/privacy",
       icon: <AiOutlineFileDone />
     },
-    /* {
+    {
       name: "How to Play",
-      slug: "how-to-play",
+      slug: "/how-to-play",
       icon: <AiOutlineAndroid />
-    }, */
+    },
   ];
 
   const styleLoader = {
@@ -62,8 +62,7 @@ export default function App() {
         visible = { showLoader }
       />
 
-
-      <GeneraContextProvider>
+      <GeneralContextProvider>
         <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -72,7 +71,7 @@ export default function App() {
           <Route path='/*' element={<NotFound />}/>
         </Routes>
         <Footer />
-      </GeneraContextProvider>
+      </GeneralContextProvider>
     </HashRouter>
   );
 }
