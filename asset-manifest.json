@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fleamans-page/static/css/main.593594e5.css",
-    "main.js": "/fleamans-page/static/js/main.701155a7.js",
+    "main.css": "/fleamans-page/static/css/main.c0cd4306.css",
+    "main.js": "/fleamans-page/static/js/main.7fc9d74a.js",
     "static/js/787.9cac32c1.chunk.js": "/fleamans-page/static/js/787.9cac32c1.chunk.js",
     "static/media/5.png": "/fleamans-page/static/media/5.e2c64d6174cfa6e3b853.png",
     "static/media/6.png": "/fleamans-page/static/media/6.08964c665260f448c136.png",
@@ -27,12 +27,12 @@
     "static/media/slick.ttf": "/fleamans-page/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/fleamans-page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/fleamans-page/index.html",
-    "main.593594e5.css.map": "/fleamans-page/static/css/main.593594e5.css.map",
-    "main.701155a7.js.map": "/fleamans-page/static/js/main.701155a7.js.map",
+    "main.c0cd4306.css.map": "/fleamans-page/static/css/main.c0cd4306.css.map",
+    "main.7fc9d74a.js.map": "/fleamans-page/static/js/main.7fc9d74a.js.map",
     "787.9cac32c1.chunk.js.map": "/fleamans-page/static/js/787.9cac32c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.593594e5.css",
-    "static/js/main.701155a7.js"
+    "static/css/main.c0cd4306.css",
+    "static/js/main.7fc9d74a.js"
   ]
 }
