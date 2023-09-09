@@ -54,17 +54,25 @@ export default function NavBar({ arrayLinks, setShowLoader }) {
                         { arrayLinks.map(({ name, slug, icon }, index)=>{
                             return(
                                 <li key={ index } >
-                                    
-                                    <NavLink 
-                                        className={({ isActive }) => (isActive ? "active" : null)} 
-                                        to={`${slug}`} 
-                                        onClick={ ShowLoader } 
-                                    >
-                                        <div className={styles.iconLink}>
-                                            { icon }
-                                        </div>
-                                        { name }
-                                    </NavLink>
+                                    { name === 'Download'?
+                                        <a href={slug} target='_blank' rel='noreferrer'>
+                                            <div className={styles.iconLink}>
+                                                { icon }
+                                            </div>
+                                            { name }
+                                        </a>
+                                    :
+                                        <NavLink 
+                                            className={({ isActive }) => (isActive ? "active" : null)} 
+                                            to={`${slug}`} 
+                                            onClick={ ShowLoader } 
+                                        >
+                                            <div className={styles.iconLink}>
+                                                { icon }
+                                            </div>
+                                            { name }
+                                        </NavLink>
+                                    }
                                 </li>
                             )
                         })}

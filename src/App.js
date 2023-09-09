@@ -16,7 +16,7 @@ import { BallTriangle } from  'react-loader-spinner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { AiOutlineFileDone, AiFillHome, AiOutlineAndroid } from "react-icons/ai";
+import { AiOutlineFileDone, AiFillHome, AiOutlineAndroid, AiFillPlayCircle } from "react-icons/ai";
 
 export default function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -35,8 +35,13 @@ export default function App() {
     {
       name: "How to Play",
       slug: "/how-to-play",
-      icon: <AiOutlineAndroid />
+      icon: <AiFillPlayCircle />
     },
+    {
+      name: "Download",
+      slug: "https://play.google.com/store/apps/details?id=com.RamshyCorp.Fleamanshell&pcampaignid=web_share",
+      icon:<AiOutlineAndroid />
+    }
   ];
 
   const styleLoader = {
