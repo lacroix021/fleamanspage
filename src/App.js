@@ -56,27 +56,27 @@ export default function App() {
   
 
   return (
-    <HashRouter>
-      <BallTriangle
-        height={100}
-        width={100}
-        radius={5}
-        color="#108982"
-        ariaLabel="ball-triangle-loading"
-        wrapperStyle={ styleLoader }
-        visible = { showLoader }
-      />
+      <HashRouter>
+        <BallTriangle
+          height={100}
+          width={100}
+          radius={5}
+          color="#108982"
+          ariaLabel="ball-triangle-loading"
+          wrapperStyle={ styleLoader }
+          visible = { showLoader }
+        />
 
-      <GeneralContextProvider>
-        <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/privacy' element={<Privacy/>}/>
-          <Route path='/how-to-play' element={<HowToPlay/>}/>
-          <Route path='/*' element={<NotFound />}/>
-        </Routes>
-        <Footer />
-      </GeneralContextProvider>
-    </HashRouter>
+        <GeneralContextProvider>          
+          <NavBar arrayLinks={ menuLinks } setShowLoader={ setShowLoader }/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/privacy' element={<Privacy/>}/>
+            <Route path='/how-to-play' element={<HowToPlay/>}/>
+            <Route path='/*' element={<NotFound />}/>
+          </Routes>
+          <Footer />
+        </GeneralContextProvider>
+      </HashRouter>
   );
 }
