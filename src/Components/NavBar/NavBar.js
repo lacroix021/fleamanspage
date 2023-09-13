@@ -23,6 +23,7 @@ export default function NavBar({ arrayLinks, setShowLoader }) {
     };
 
     const ShowLoader = ()=> {
+        window.scrollTo(0, 0);
         setShowLoader(true);
         document.body.classList.add('modal-open');
 
